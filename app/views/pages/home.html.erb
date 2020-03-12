@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      .container {margin-top: 2%;}
+
+      .dot {
+          height: 200px;
+          width: 200px;
+          background-color: lightgrey;
+          border-radius: 50%;
+          display: inline-block;
+          margin-bottom: -5rem;
+          text-align: center;
+          box-shadow: 0px 0px 5px #80808059;
+
+            }
+       .dot h4 {
+        font-family: Verdana;
+        color:#4d4c4c;
+       }
+       .dot p {
+        font-family: Verdana;
+        color:#4d4c4c;
+        font-size:12px;
+       }
+       .mobile-banner {
+         background-size: cover;
+        background-position: center;
+        padding: 150px 0;
+        height: 26vh;
+        top: -8rem;
+        z-index: -1;
+        position: relative;
+        background-image: url(https://pic4.zhimg.com/v2-34c6587aa75dd33470cf5f4dddcb6923_1200x500.jpg);
+                      }
+
+       .rectangle-laptop {
+            height: 200px;
+            width: 850px;
+            background-color: #555;
+            display: inline-block;
+            background-position: center;
+            transition: all 0.5s ease;
+            background-image: url(https://pic4.zhimg.com/v2-34c6587aa75dd33470cf5f4dddcb6923_1200x500.jpg);
+
+        }
+        .rectangle-laptop:hover{transform: scale(1.2);}
+
+        .rectangle-laptop img {
+          max-height: 200px;
+          max-width: 850px;
+
+        }
+
+
+        .rectangle-vertical-1 {
+          height: 180px;
+          width: 120px;
+          background-color: lightgrey;
+          display: inline-block;
+          margin:6%;
+          box-shadow: 5px 5px 5px #80808082;
+        }
+        .rectangle-vertical-2 {
+          height: 180px;
+          width: 120px;
+          background-color: #a3a3a3;
+          display: inline-block;
+          margin:6%;
+          box-shadow: 5px 5px 5px #80808082;
+        }
+        .rectangle-vertical-3 {
+          height: 180px;
+          width: 120px;
+          background-color: #4d4c4c;
+          display: inline-block;
+          margin:6%;
+          box-shadow: 5px 5px 5px #80808082;
+        }
+        .retangle-vertical-text {
+          text-decoration: underline;
+          margin-top: 190%;
+        }
+
+    .rectangle-vertical-container {
+    position: relative;margin-top: -8rem;
+        }
+  @media only screen and (max-width: 768px) {
+    .rectangle-vertical-container{ margin-top: -8rem; display:flex;}
+     .rectangle-vertical-1 {
+        height: 9rem !important;
+        width: 40% !important;
+}
+.rectangle-vertical-2 {
+        height: 9rem !important;
+        width: 40% !important;
+}
+.rectangle-vertical-3 {
+        height: 9rem !important;
+        width: 40% !important;
+}
+
+.dot {
+  position: relative;
+
+left: 6rem;
+}
+  }
+
+            @media only screen and (max-width: 768px) {
+    .hide-for-small{
+       display: none !important;
+     }
+  }
+
+           @media only screen and (min-width: 800px) {
+    .hide-for-large{
+       display: none !important;
+     }
+  }
+
+
+          @media only screen and (min-width: 800px) {
+    .mobile-banner{
+       display: none !important;
+     }
+  }
+
+
+ /* @media only screen and (max-width: 768px) {
+    .rectangle-laptop{
+       display: none !important;
+     }
+  }*/
+
+</style>
+  </head>
+    <body>
+      <div class="container">
+        <div  class="dot hide-for-large" ><h4>Melrose</h4><p>this sleek slab-styled kitchen allows you to mix and match both colour and texture.</p></div>
+        <div class = "mobile-banner"></div>
+
+        <div  style="position: relative;">
+
+        <div  style="text-align:center" >
+          <div  class="dot hide-for-small"  style="z-index:2; position: relative;" >
+
+            <div class = "dot-text"><h4>Melrose</h4><p>this sleek slab-styled kitchen allows you to mix and match both colour and texture.</p></div></div>
+             <div>
+
+                <div style="text-align:center">
+
+
+            <div class="rectangle-laptop hide-for-small"   >
+              </div>
+              <div class = "rectangle-vertical-container" >
+                <div class="rectangle-vertical-1" ><div class = "retangle-vertical-text">Dove Grey</div></div>
+                <div class="rectangle-vertical-2"><div class = "retangle-vertical-text">Pewter</div></div>
+                <div class="rectangle-vertical-3"><div class = "retangle-vertical-text">Carbon</div></div>
+
+              </div>
+            </div>
+            </div>
+
+
+
+            </div>
+
+    </body>
+</html>
